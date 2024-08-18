@@ -265,7 +265,6 @@ html {
   transition: box-shadow 0.5s ease-in-out;
 }
 #noVNC_control_bar.noVNC_open::before {
-  box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.5);
 }
 .noVNC_right #noVNC_control_bar {
   left: 100%;
@@ -292,7 +291,6 @@ html {
   background-image: url("../images/handle_bg.svg");
   background-repeat: no-repeat;
   background-position: right;
-  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.5);
 }
 #noVNC_control_bar_handle:after {
   content: "";
@@ -449,7 +447,6 @@ html {
   border-radius: 10px;
   color: #000;
   border: 2px solid #E0E0E0;
-  box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.5);
 }
 .noVNC_panel.noVNC_open {
   visibility: visible;
