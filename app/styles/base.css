@@ -539,8 +539,8 @@ html {
 }
 
 .noVNC_logo {
-    width: 28px;
-    height: 28px;
+     max-width: 28px;
+    max-height: 28px;
 }
 
 :root:not(.noVNC_connected) #noVNC_view_drag_button {
