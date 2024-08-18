@@ -250,20 +250,10 @@ html {
   -webkit-touch-callout: none; /* Disable iOS image long-press popup */
 }
 #noVNC_control_bar.noVNC_open {
-  box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(12px);
   left: 0;
 }
-#noVNC_control_bar::before {
-  /* This extra element is to get a proper shadow */
-  content: "";
-  position: absolute;
-  z-index: -1;
-  height: 100%;
-  width: 30px;
-  left: -30px;
-  transition: box-shadow 0.5s ease-in-out;
-}
+
 #noVNC_control_bar.noVNC_open::before {
 }
 .noVNC_right #noVNC_control_bar {
