@@ -91,8 +91,6 @@ input[type=checkbox] {
   align-items: center;
   background-color: white;
   background-image: unset;
-  border: 1px solid dimgrey;
-  border-radius: 3px;
   width: 13px;
   height: 13px;
   padding: 0;
@@ -101,15 +99,13 @@ input[type=checkbox] {
   transition: 0.2s background-color linear;
 }
 input[type=checkbox]:checked {
-  background-color: rgb(110, 132, 163);
-  border-color: rgb(110, 132, 163);
+  background-color: #484848;
 }
 input[type=checkbox]:checked::after {
   content: "";
   display: block; /* width & height doesn't work on inline elements */
   width: 3px;
   height: 7px;
-  border: 1px solid white;
   border-width: 0 2px 2px 0;
   transform: rotate(40deg) translateY(-1px);
 }

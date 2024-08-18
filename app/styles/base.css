@@ -36,10 +36,7 @@
 body {
   margin:0;
   padding:0;
-  /*Background image with light grey curve.*/
-  background-color:#494949;
-  background-repeat:no-repeat;
-  background-position:right bottom;
+  background-color:#000000;
   height:100%;
   touch-action: none;
 }
@@ -379,7 +376,7 @@ html {
 #noVNC_control_bar .noVNC_button {
   padding: 4px 4px;
   vertical-align: middle;
-  border:1px solid rgba(255, 255, 255, 0.2);
+  border:1px solid transparent;
   border-radius: 6px;
   background-color: transparent;
   background-image: unset; /* we don't want the gradiant from input.css */
@@ -393,7 +390,7 @@ html {
   background-color: rgba(0, 0, 0, 0.2);
 }
 #noVNC_control_bar .noVNC_button:not(:disabled):hover {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 #noVNC_control_bar .noVNC_button:not(:disabled):active {
   padding-top: 5px;
@@ -481,9 +478,7 @@ html {
 }
 
 .noVNC_panel .noVNC_heading {
-  background-color: rgb(110, 132, 163);
   border-radius: 5px;
-  padding: 5px;
   /* Compensate for padding in image */
   padding-right: 8px;
   color: white;
@@ -526,6 +521,12 @@ html {
 
 #noVNC_control_bar .noVNC_logo {
   font-size: 13px;
+}
+
+.noVNC_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .noVNC_logo img {
@@ -595,10 +596,18 @@ html {
 
 /* Settings */
 #noVNC_settings {
+  background-color: #161616;
+  color: #FFF;
+  border: none;
+  font-family: Inter, sans;
+}
+#noVNC_settings img {
+  padding-right: 2px;
+  padding-top: 1px;
 }
 #noVNC_settings ul {
   list-style: none;
-  padding: 0px;
+  padding-left: 12px;
 }
 #noVNC_setting_port {
   width: 80px;
@@ -699,6 +708,11 @@ html {
   transform: scale(0, 0);
   visibility: hidden;
   opacity: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
 }
 #noVNC_connect_dlg.noVNC_open {
   transform: scale(1, 1);
@@ -723,33 +737,33 @@ html {
     font-size: calc(25vw - 30px);
   }
 }
-#noVNC_connect_dlg div {
-  padding: 12px;
-
-  background-color: rgb(110, 132, 163);
-  border-radius: 12px;
-  text-align: center;
-  font-size: 20px;
-
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-}
 #noVNC_connect_button {
   width: 100%;
-  padding: 5px 30px;
+  padding: 12px 24px;
+  letter-spacing: -0.025em;
+  font-weight: 400;
 
   cursor: pointer;
 
-  border-color: rgb(83, 99, 122);
-  border-radius: 5px;
+  border-radius: 25px;
 
-  background: linear-gradient(to top, rgb(110, 132, 163), rgb(99, 119, 147));
-  color: white;
+  background: #EEE;
+  color: black;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 
   /* This avoids it jumping around when :active */
   vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  align-items: center;
+
+  font-size: 18px;
+  font-weight: 500;
 }
 #noVNC_connect_button:hover {
-  background: linear-gradient(to top, rgb(110, 132, 163), rgb(105, 125, 155));
+  background: #DDD;
+  transition: 0.2s;
 }
 
 #noVNC_connect_button img {
@@ -839,13 +853,6 @@ html {
 #noVNC_container {
   width: 100%;
   height: 100%;
-  background-color: #313131;
-  border-bottom-right-radius: 800px 600px;
-  /*border-top-left-radius: 800px 600px;*/
-
-  /* If selection isn't disabled, long-pressing stuff in the sidebar
-     can accidentally select the container or the canvas. This can
-     happen when attempting to move the handle. */
   user-select: none;
   -webkit-user-select: none;
 }
@@ -862,19 +869,16 @@ html {
   ime-mode: disabled;
 }
 
-/*Default noVNC logo.*/
-/* From: http://fonts.googleapis.com/css?family=Orbitron:700 */
+
 @font-face {
-  font-family: 'Orbitron';
+  font-family: 'Inter';
   font-style: normal;
-  font-weight: 700;
-  src: local('?'), url('Orbitron700.woff') format('woff'),
-                   url('Orbitron700.ttf') format('truetype');
+  src: local('?'), url('Inter.ttf') format('truetype');
 }
 
 .noVNC_logo {
   color:yellow;
-  font-family: 'Orbitron', 'OrbitronTTF', sans-serif;
+  font-family: 'Inter', 'system-ui';
   line-height: 0.9;
   text-shadow: 0.1em 0.1em 0 black;
 }
