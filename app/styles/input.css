@@ -10,7 +10,7 @@
  */
 input, input::file-selector-button, button, select, textarea {
   /* Respect standard font settings */
-  font: inherit;
+  font: Inter;
 
   /* Disable default rendering */
   appearance: none;
