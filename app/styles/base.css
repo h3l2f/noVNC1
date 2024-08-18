@@ -36,7 +36,7 @@
 body {
   margin:0;
   padding:0;
-  background-color:#000000;
+  background-color:#040404;
   height:100%;
   touch-action: none;
 }
@@ -224,7 +224,7 @@ html {
 
   transition: 0.5s ease-in-out;
 
-  background-color: rgb(12, 12, 12, 0.75);
+  background-color: rgb(12, 12, 12, 0.9);
   
   border-radius: 0 10px 10px 0;
 
@@ -260,7 +260,7 @@ html {
   z-index: -1;
   cursor: pointer;
   border-radius: 5px;
-  background-color: rgb(83, 99, 122);
+  background-color: rgb(12, 12, 12, 0.9);
   background-image: url("../images/handle_bg.svg");
   background-repeat: no-repeat;
   background-position: right;
@@ -813,7 +813,7 @@ html {
   right: 0;
 
   color: white;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.8);
   z-index: 50;
 
   /*display: flex;*/
