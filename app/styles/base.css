@@ -539,9 +539,8 @@ html {
 }
 
 .noVNC_logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 28px;
+    height: 28px;
 }
 
 :root:not(.noVNC_connected) #noVNC_view_drag_button {
