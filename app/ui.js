@@ -18,7 +18,7 @@ import Keyboard from "../core/input/keyboard.js";
 import RFB from "../core/rfb.js";
 import * as WebUtil from "./webutil.js";
 
-const PAGE_TITLE = "noVNC";
+const PAGE_TITLE = "pterodesk";
 
 const UI = {
 
@@ -1160,10 +1160,9 @@ const UI = {
         // directly from the server. Note that we can't control if
         // this string is translated or not.
         if ('reason' in e.detail) {
-            msg = _("New connection has been rejected with reason: ") +
-                e.detail.reason;
+            msg = e.detail.reason;
         } else {
-            msg = _("New connection has been rejected");
+            msg = _("Connection rejected");
         }
         UI.showStatus(msg, 'error');
     },
