@@ -1228,7 +1228,7 @@ const UI = {
             .getElementById(inputFocus).focus(), 100);
 
         Log.Warn("Server asked for credentials");
-        UI.showStatus(_("Credentials are required"), "warning");
+        // UI.showStatus(_("Credentials are required"), "warning");
     },
 
     setCredentials(e) {
