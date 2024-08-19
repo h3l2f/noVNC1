@@ -667,19 +667,19 @@ html {
 }
 
 #noVNC_status.noVNC_status_normal {
-  background: rgba(128,128,128,0.9);
+  background: #484848;
 }
 #noVNC_status.noVNC_status_normal::before {
   content: url("../images/info.svg") " ";
 }
 #noVNC_status.noVNC_status_error {
-  background: rgba(171, 51, 51, 0.9);
+  background: rgba(255, 0, 0, 0.5);
 }
 #noVNC_status.noVNC_status_error::before {
   content: url("../images/error.svg") " ";
 }
 #noVNC_status.noVNC_status_warn {
-  background: rgba(199, 199, 0, 0.9);
+  background: rgba(255, 255, 0, 0.5);
 }
 #noVNC_status.noVNC_status_warn::before {
   content: url("../images/warning.svg") " ";
