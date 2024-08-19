@@ -18,6 +18,7 @@ export const encodings = {
 
     pseudoEncodingQualityLevel9: -23,
     pseudoEncodingQualityLevel0: -32,
+    pseudoEncodingReplitAudio: 0x52706c41,
     pseudoEncodingDesktopSize: -223,
     pseudoEncodingLastRect: -224,
     pseudoEncodingCursor: -239,
