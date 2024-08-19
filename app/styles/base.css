@@ -673,13 +673,13 @@ html {
   content: url("../images/info.svg") " ";
 }
 #noVNC_status.noVNC_status_error {
-  background: rgba(200,55,55,0.9);
+  background: rgba(171, 51, 51, 0.9);
 }
 #noVNC_status.noVNC_status_error::before {
   content: url("../images/error.svg") " ";
 }
 #noVNC_status.noVNC_status_warn {
-  background: rgba(180,180,30,0.9);
+  background: rgba(199, 199, 0, 0.9);
 }
 #noVNC_status.noVNC_status_warn::before {
   content: url("../images/warning.svg") " ";
