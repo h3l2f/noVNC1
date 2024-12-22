@@ -224,8 +224,9 @@ html {
 
   transition: 0.5s ease-in-out;
 
-  background-color: rgb(12, 12, 12, 0.9);
-  
+  /* background-color: rgb(12, 12, 12, 0.9); */
+  background-color: rgba(0, 0, 200, 0.2);
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
   border-radius: 0 10px 10px 0;
 
   user-select: none;
@@ -260,7 +261,7 @@ html {
   z-index: -1;
   cursor: pointer;
   border-radius: 5px;
-  background-color: rgb(12, 12, 12, 0.9);
+  background-color: rgba(0, 0, 200, 0.2);
   background-image: url("../images/handle_bg.svg");
   background-repeat: no-repeat;
   background-position: right;
@@ -416,11 +417,25 @@ html {
 
   padding: 15px;
 
-  background: #fff;
+  background: rgba(0, 0, 200, 0.2);
   border-radius: 10px;
-  color: #000;
-  border: 2px solid #E0E0E0;
+  color: white;
+  border: 2px solid #1100c8;
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
 }
+
+#noVNC_credentials_button {
+  background: rgba(0, 0, 200, 0.2);
+  color: white;
+  border-color: #1100c8;
+}
+
+#noVNC_password_input {
+  color: white !important;
+  border-color: #1100c8;
+}
+
 .noVNC_panel.noVNC_open {
   visibility: visible;
   opacity: 1;
@@ -570,9 +585,10 @@ html {
 }
 
 #noVNC_clipboard {
-  background-color: #161616;
+  background-color: rgba(0, 0, 200, 0.2);
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   border: none !important;
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
 }
 
 #noVNC_clipboard p {
@@ -593,10 +609,11 @@ html {
 
 /* Settings */
 #noVNC_settings {
-  background-color: #161616;
+  background-color: rgba(0, 0, 200, 0.2);
   color: #FFF;
   border: none;
   font-family: Inter, sans;
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
 }
 #noVNC_settings img {
   padding-right: 2px;
@@ -746,8 +763,9 @@ html {
 
   border-radius: 25px;
 
-  background: #EEE;
-  color: black;
+  background: rgba(0, 0, 200, 0.2);
+  color: white;
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
 
   /* This avoids it jumping around when :active */
   vertical-align: middle;
@@ -760,7 +778,7 @@ html {
   font-weight: 500;
 }
 #noVNC_connect_button:hover {
-  background: #DDD;
+  background: rgba(0, 0, 200, 0.5);
   transition: 0.2s;
 }
 
