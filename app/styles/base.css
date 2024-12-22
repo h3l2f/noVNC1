@@ -36,7 +36,7 @@
 body {
   margin:0;
   padding:0;
-  background-color:#040404;
+  background-color:rgba(0, 0, 10);
   height:100%;
   touch-action: none;
 }
@@ -60,19 +60,41 @@ html {
 
 /* HTML: <div class="loader"></div> */
 /* HTML: <div class="loader"></div> */
+
 .noVNC_spinner {
-  width: 60px;
-  aspect-ratio: 1;
-  --g: conic-gradient(from -90deg at 10px 10px,#fff 90deg,#0000 0);
-  background: 
-    var(--g),
-    var(--g) 10px 10px,
-    var(--g) 20px 20px;
-  background-size: 50% 50%;
-  animation: l15 1s infinite;
+  position: relative;
 }
+.noVNC_spinner, .noVNC_spinner::before, .noVNC_spinner::after {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  box-shadow: -60px 10px 0 rgba(0, 0, 200, 0);
+  animation: noVNC_spinner 1.0s linear infinite;
+}
+
+.noVNC_spinner::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  animation-delay: -0.1s;
+}
+.noVNC_spinner::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  animation-delay: 0.1s;
+}
+
 @keyframes l15 {
     90%,100%  {background-position: -30px 30px,-20px 40px,-10px 50px} 
+}
+
+@keyframes noVNC_spinner {
+  0% { box-shadow: -60px 10px 0 rgba(0, 0, 200, 0); width: 20px; }
+  25% { box-shadow: 20px 10px 0 rgba(0, 0, 200, 1); width: 10px; }
+  50% { box-shadow: 60px 10px 0 rgba(0, 0, 200, 0); width: 10px; }
 }
 /* ----------------------------------------
  * WebKit centering hacks
@@ -776,6 +798,8 @@ html {
 
   font-size: 18px;
   font-weight: 500;
+
+  border-color: #1100c8;
 }
 #noVNC_connect_button:hover {
   background: rgba(0, 0, 200, 0.5);
