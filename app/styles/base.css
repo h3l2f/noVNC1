@@ -63,79 +63,33 @@ html {
 
 .noVNC_spinner {
   position: relative;
-  width: 55px !important;
 }
 
-.noVNC_spinner .loader[alt="1"] {
-  animation-delay: 0.5s;
-  border-top-left-radius: 50%;
+/* HTML: <div class="loader"></div> */
+.noVNC_spinner {
+  width: 60px;
+  aspect-ratio: 1;
+  --c:no-repeat linear-gradient(#000094 0 0);
+  background: var(--c),var(--c),var(--c),var(--c);
+  animation: 
+    l9-1 1.5s infinite,
+    l9-2 1.5s infinite;
 }
-
-.noVNC_spinner .loader[alt="2"] {
-  animation-delay: 1s;
-  border-top-right-radius: 50%;
+@keyframes l9-1 {
+  0%   {background-size: 0    4px,4px 0   }
+  25%  {background-size: 40px 4px,4px 0   }
+  45%,
+  55%  {background-size: 40px 4px,4px 42px}
+  75%  {background-size: 0    4px,4px 42px}
+  100% {background-size: 0    4px,4px 0   }
 }
-
-.noVNC_spinner .loader[alt="3"] {
-  animation-delay: 1.5s;
-  border-bottom-right-radius: 50%;
+@keyframes l9-2 {
+  0%,49.9% {background-position: 0  38px               ,18px 18px,100% 18px,right 18px bottom 18px}
+  50%,100% {background-position: right 20px bottom 18px,18px 100%,20px 18px,right 18px top 0      }
 }
-
-.noVNC_spinner .loader[alt="4"] {
-  animation-delay: 2s;
-  border-bottom-left-radius: 50%;
-}
-
-.noVNC_spinner .loader {
-  width: 25px;
-  height: 25px;
-  background-color: rgba(0, 0, 200, 0.3);
-  /* margin: 5px; */
-  opacity: 0;
-  animation: h3l2f 2s infinite;
-  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
-  margin-left: -4px;
-  margin-top: -4px;
-}
-
-/* .noVNC_spinner::before {
-  content: "";
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  animation-delay: -0.1s;
-}
-.noVNC_spinner::after {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  animation-delay: 0.1s;
-} */
 
 @keyframes l15 {
     90%,100%  {background-position: -30px 30px,-20px 40px,-10px 50px} 
-}
-
-@keyframes h3l2f {
-  0%   {
-      opacity: .75;
-  }
-  20%  {
-      opacity: 1;
-  }
-  40%  {
-      opacity: .75;
-  }
-  60% {
-      opacity: .50;
-  }
-  80% {
-      opacity: .25;
-  }
-  100% {
-      opacity: .50;
-  }
 }
 
 @keyframes noVNC_spinner {
