@@ -94,8 +94,8 @@ html {
   opacity: 0;
   animation: h3l2f 2s infinite;
   box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
-  margin-left: -5px;
-  margin-right: 5px;
+  margin-left: -4px;
+  margin-top: -4px;
 }
 
 /* .noVNC_spinner::before {
