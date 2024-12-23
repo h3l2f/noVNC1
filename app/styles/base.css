@@ -92,8 +92,10 @@ html {
   background-color: rgba(0, 0, 200, 0.3);
   /* margin: 5px; */
   opacity: 0;
-  animation: example 2s infinite;
+  animation: h3l2f 2s infinite;
   box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
+  margin-left: -5px;
+  margin-right: 5px;
 }
 
 /* .noVNC_spinner::before {
@@ -115,7 +117,7 @@ html {
     90%,100%  {background-position: -30px 30px,-20px 40px,-10px 50px} 
 }
 
-@keyframes example {
+@keyframes h3l2f {
   0%   {
       opacity: .75;
   }
