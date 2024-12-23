@@ -66,26 +66,40 @@ html {
 }
 
 /* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
 .noVNC_spinner {
-  width: 60px;
+  width: 30px;
   aspect-ratio: 1;
-  --c:no-repeat linear-gradient(#000094 0 0);
-  background: var(--c),var(--c),var(--c),var(--c);
-  animation: 
-    l9-1 1.5s infinite,
-    l9-2 1.5s infinite;
+  display: grid;
 }
-@keyframes l9-1 {
-  0%   {background-size: 0    4px,4px 0   }
-  25%  {background-size: 40px 4px,4px 0   }
-  45%,
-  55%  {background-size: 40px 4px,4px 42px}
-  75%  {background-size: 0    4px,4px 42px}
-  100% {background-size: 0    4px,4px 0   }
+.noVNC_spinner,
+.noVNC_spinner:before,
+.noVNC_spinner:after {
+  --c:no-repeat linear-gradient(#000090 0 0);
+  background:var(--c), var(--c), var(--c), var(--c);
+  animation: l19-1 1.5s infinite, l19-2 1.5s infinite;
 }
-@keyframes l9-2 {
-  0%,49.9% {background-position: 0  38px               ,18px 18px,100% 18px,right 18px bottom 18px}
-  50%,100% {background-position: right 20px bottom 18px,18px 100%,20px 18px,right 18px top 0      }
+.noVNC_spinner:before,
+.noVNC_spinner:after {
+  content: "";
+  grid-area: 1/1;
+  transform: translate(calc(50% - 2px),calc(2px - 50%)) rotate(90deg);
+  animation-delay: -.25s;
+}
+.noVNC_spinner:after {
+  transform: translate(calc(2px - 50%),calc(50% - 2px)) rotate(90deg);
+}
+@keyframes l19-1 {
+  0%,
+  10%   {background-size: 0    4px,4px 0 }
+  40%,
+  60%   {background-size: 100% 4px,4px 100%}
+  90%,
+  100%  {background-size: 0    4px,4px 0  }
+}
+@keyframes l19-2 {
+  0%,49.9%{background-position: 0    0,0    0,100% 100%,100% 100%}
+  50%,100%{background-position: 100% 0,0 100%,0    100%,100% 0}
 }
 
 @keyframes l15 {
