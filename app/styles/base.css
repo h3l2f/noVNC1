@@ -64,15 +64,38 @@ html {
 .noVNC_spinner {
   position: relative;
 }
-.noVNC_spinner, .noVNC_spinner::before, .noVNC_spinner::after {
-  width: 10px;
-  height: 10px;
-  border-radius: 2px;
-  box-shadow: -60px 10px 0 rgba(0, 0, 200, 0);
-  animation: noVNC_spinner 1.0s linear infinite;
+
+.noVNC_spinner .loader[alt="1"] {
+  animation-delay: 0.5s;
+  border-top-left-radius: 50%;
 }
 
-.noVNC_spinner::before {
+.noVNC_spinner .loader[alt="2"] {
+  animation-delay: 1s;
+  border-top-right-radius: 50%;
+}
+
+.noVNC_spinner .loader[alt="3"] {
+  animation-delay: 1.5s;
+  border-bottom-right-radius: 50%;
+}
+
+.noVNC_spinner .loader[alt="4"] {
+  animation-delay: 2s;
+  border-bottom-left-radius: 50%;
+}
+
+.noVNC_spinner .loader {
+  width: 25px;
+  height: 25px;
+  background-color: rgba(0, 0, 200, 0.3);
+  /* margin: 5px; */
+  opacity: 0;
+  animation: example 2s infinite;
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
+}
+
+/* .noVNC_spinner::before {
   content: "";
   position: absolute;
   left: 0px;
@@ -85,10 +108,31 @@ html {
   top: 0px;
   left: 0px;
   animation-delay: 0.1s;
-}
+} */
 
 @keyframes l15 {
     90%,100%  {background-position: -30px 30px,-20px 40px,-10px 50px} 
+}
+
+@keyframes example {
+  0%   {
+      opacity: .75;
+  }
+  20%  {
+      opacity: 1;
+  }
+  40%  {
+      opacity: .75;
+  }
+  60% {
+      opacity: .50;
+  }
+  80% {
+      opacity: .25;
+  }
+  100% {
+      opacity: .50;
+  }
 }
 
 @keyframes noVNC_spinner {
