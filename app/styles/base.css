@@ -63,6 +63,7 @@ html {
 
 .noVNC_spinner {
   position: relative;
+  width: 55px !important;
 }
 
 .noVNC_spinner .loader[alt="1"] {
