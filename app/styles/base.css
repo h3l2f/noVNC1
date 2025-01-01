@@ -449,7 +449,7 @@ html {
     background-color: transparent;
   }
   #noVNC_control_bar .noVNC_button.noVNC_selected:not(:disabled):hover {
-    border-color: rgba(0, 0, 0, 200.8);
+    border-color: rgba(0, 0, 0, 0.8);
     background-color: rgba(0, 0, 200, 0.5);
   }
 }
