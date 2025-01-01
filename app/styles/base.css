@@ -29,6 +29,24 @@
  * noVNC_disconnecting: Disconnecting from server
  */
 
+*::-webkit-scrollbar {
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #f1f1f133;
+    border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: rgb(95, 95, 95);
+    border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 :root {
   font-family: sans-serif;
 }
@@ -648,7 +666,7 @@ html {
 #noVNC_settings {
   background-color: rgba(0, 0, 200, 0.2);
   color: #FFF;
-  border: none;
+/*   border: none; */
   font-family: Inter, sans;
   box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
 }
