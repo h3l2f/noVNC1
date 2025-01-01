@@ -357,11 +357,11 @@ html {
   height: 100%;
   display: none;
 }
-@media (any-pointer: coarse) {
+/* @media (any-pointer: coarse) {
   #noVNC_control_bar_handle div {
     display: initial;
   }
-}
+} */
 .noVNC_right #noVNC_control_bar_handle div {
   left: -35px;
   right: auto;
