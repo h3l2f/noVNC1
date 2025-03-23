@@ -93,7 +93,7 @@ html {
 .noVNC_spinner,
 .noVNC_spinner:before,
 .noVNC_spinner:after {
-  --c:no-repeat linear-gradient(#000090 0 0);
+  --c:no-repeat linear-gradient(#4a01c0 0 0);
   background:var(--c), var(--c), var(--c), var(--c);
   animation: l19-1 1.5s infinite, l19-2 1.5s infinite;
 }
