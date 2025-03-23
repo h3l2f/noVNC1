@@ -18,7 +18,7 @@ import Keyboard from "../core/input/keyboard.js";
 import RFB from "../core/rfb.js";
 import * as WebUtil from "./webutil.js";
 
-const PAGE_TITLE = "H3L2F - powered by noVNC";
+const PAGE_TITLE = "Lemem - by h3l2f";
 
 const UI = {
 
