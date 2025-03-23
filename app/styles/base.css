@@ -279,10 +279,10 @@ html {
 
   transition: 0.5s ease-in-out;
 
-  background-color: rgba(0, 0, 200, 0.2);
+  background-color: rgba(74, 1, 192, 0.2);
   box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
   border-radius: 0 10px 10px 0;
-  border: 2px solid #1100c8;
+  border: 2px solid #4a01c0;
   border-left: none;
   user-select: none;
   -webkit-user-select: none;
@@ -295,6 +295,7 @@ html {
 
 #noVNC_control_bar.noVNC_open::before {
 }
+
 .noVNC_right #noVNC_control_bar {
   left: 100%;
   border-radius: 10px 0 0 10px;
@@ -316,7 +317,7 @@ html {
   z-index: -1;
   cursor: pointer;
   border-radius: 5px;
-  background-color: rgba(0, 0, 200, 0.2);
+  background-color: rgba(74, 1, 192, 0.2);
   background-image: url("../images/handle_bg.svg");
   background-repeat: no-repeat;
   background-position: right;
@@ -429,7 +430,7 @@ html {
 }
 #noVNC_control_bar .noVNC_button.noVNC_selected:not(:disabled):hover {
     border-color: rgba(0, 0, 200, 0.4);
-    background-color: rgba(0, 0, 200, 0.2);
+    background-color: rgba(74, 1, 192, 0.2);
 }
 #noVNC_control_bar .noVNC_button:not(:disabled):hover {
   background-color: rgba(0, 0, 200, 0.1);
@@ -472,23 +473,23 @@ html {
 
   padding: 15px;
 
-  background: rgba(0, 0, 200, 0.2);
+  background: rgba(74, 1, 192, 0.2);
   border-radius: 10px;
   color: white;
-  border: 2px solid #1100c8;
+  border: 2px solid #4a01c0;
   box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px);
 }
 
 #noVNC_credentials_button {
-  background: rgba(0, 0, 200, 0.2);
+  background: rgba(74, 1, 192, 0.2);
   color: white;
-  border-color: #1100c8;
+  border-color: #4a01c0;
 }
 
 #noVNC_password_input {
   color: white !important;
-  border-color: #1100c8;
+  border-color: #4a01c0;
 }
 
 .noVNC_panel.noVNC_open {
@@ -615,7 +616,7 @@ html {
 }
 
 #noVNC_modifiers {
-  background-color: rgba(0, 0, 200, 0.2);
+  background-color: rgba(74, 1, 192, 0.2);
 /*   border: none; */
   padding: 10px;
 }
@@ -640,7 +641,7 @@ html {
 }
 
 #noVNC_clipboard {
-  background-color: rgba(0, 0, 200, 0.2);
+  background-color: rgba(74, 1, 192, 0.2);
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 /*   border: none !important; */
   box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
@@ -664,7 +665,7 @@ html {
 
 /* Settings */
 #noVNC_settings {
-  background-color: rgba(0, 0, 200, 0.2);
+  background-color: rgba(74, 1, 192, 0.2);
   color: #FFF;
 /*   border: none; */
   font-family: Inter, sans;
@@ -818,7 +819,7 @@ html {
 
   border-radius: 25px;
 
-  background: rgba(0, 0, 200, 0.2);
+  background: rgba(74, 1, 192, 0.2);
   color: white;
   box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
 
@@ -832,7 +833,7 @@ html {
   font-size: 18px;
   font-weight: 500;
 
-  border-color: #1100c8;
+  border-color: #4a01c0;
 }
 #noVNC_connect_button:hover {
   background: rgba(0, 0, 200, 0.5);
